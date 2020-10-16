@@ -16,10 +16,10 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-        <script type="text/javascript" src="js/materialize.min.js"></script>    
+
+        <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
-    
+
     <body>
 
   <nav id="top">
@@ -36,27 +36,27 @@
       <div class="indeterminate"></div>
   </div>
 
-<aside>    
+<aside>
 
 <button id="home"  class="waves-effect waves-light" ><i class="material-icons">home</i></button>
 
     <div class="day" id="sun">Неділя</div>
     <div class="day" id="mon">Понеділок</div>
-    
+
     <div class="day" id="tue">Вівторок</div>
     <div class="day" id="wed">Середа</div>
-    
+
     <div class="day" id="thu">Четвер</div>
     <div class="day" id="fri">П'ятниця</div>
-    
+
     <div class="day" id="sat">Субота</div>
-</aside>    
+</aside>
 
 
 
 
 <!-- Рокзклад на понеділок -->
-    
+
 <div class="less_area" id="mon_area">
 
 <div class="lesson" id="first_less_mon">
@@ -84,8 +84,8 @@
 <input id="input" class="inp_lesson" placeholder="Назва дисципліни">
 <a id="add" class="btn-floating btn waves-effect waves-light red"><i class="material-icons">add</i></a>
 -->
-</div>    
- 
+</div>
+
  <!-- Розклад на вівторок -->
 <div class="less_area" id="tue_area">
 
@@ -110,9 +110,9 @@
 </div>
 
 
- 
+
 </div>
- 
+
 
 <!-- Рокзклад на середу -->
 <div class="less_area" id="wed_area">
@@ -134,9 +134,9 @@
 
 <div class="lesson" id="first_less_mon">
 4. Історія і культура України <br>
-12:50-14:10                        
+12:50-14:10
 </div>
- 
+
 </div>
 
 
@@ -145,7 +145,7 @@
 <div class="less_area" id="thu_area">
 
 <div class="lesson" id="first_less_mon">
-1. -    
+1. -
 </div>
 
 <div class="lesson" id="second_less_mon">
@@ -159,7 +159,7 @@
 </div>
 
 <div class="lesson" id="first_less_mon">
-4. ПУМ <br>
+4. БЖД <br>
 12:50-14:10
 </div>
 
@@ -186,16 +186,16 @@
 </div>
 
 <div class="lesson" id="first_less_mon">
-4. Охорона праці <br>
+4. БЖД <br>
 12:50-14:10
 </div>
-        
+
 </div>
 
 <style>
 #top{
 background:orange;
-} 
+}
 #lang_less{
 position:absolute;
 left:7%;
@@ -217,10 +217,10 @@ border:none;
 border-radius:5px;
 color:#fff;
 }
-  
+
 #loader{
 position:absolute;
-bottom:1%; 
+bottom:1%;
 }
 
 #input{
@@ -328,28 +328,30 @@ color: #3fb6b2;
 }
 
  @keyframes hide{
-        
-        0%{ } 
-        95%{ transform: scale(0.01); translateY(-100%);}    
+
+        0%{ }
+        95%{ transform: scale(0.01); translateY(-100%);}
         100%{transform:  scale(0);}
-        
-             
+
+
         }
 
  @keyframes show{
-        
+
         0%{transform:scale(0); }
-        
+
         100%{transform:scale(1); }
-             
+
         }
 
 
-</style>    
-    
-    
+</style>
+
+
 <script>
 window.addEventListener("load", function(){
+
+alert("Привіт! Сайт буде доповнюватись і змінюватись.\n Дякую, що відвідали мій сайт!")
 
 let loader = document.getElementById("loader")
 
@@ -418,10 +420,10 @@ tue_area.style.display = "none"
 wed_area.style.display = "none"
 thu_area.style.display = "none"
 fri_area.style.display = "none"
-    
 
-// sat.style.display = "inline" 
-// sun.style.display = "inline" 
+
+// sat.style.display = "inline"
+// sun.style.display = "inline"
 
 
 },490)
@@ -434,7 +436,7 @@ mon.addEventListener("click", function(){
 
 mon_area.style.display = "inline"
 mon_area.style.animation = "show 0.5s"
-    
+
 sun.style.animation = "hide 0.5s"
 tue.style.animation = "hide 0.5s"
 
@@ -452,8 +454,8 @@ setTimeout(function(){
     thu.style.display = "none"
 
     fri.style.display = "none"
-    sat.style.display = "none"    
-    
+    sat.style.display = "none"
+
 },500)
 
 })
@@ -482,8 +484,8 @@ tue_area.style.display = "inline"
     thu.style.display = "none"
 
     fri.style.display = "none"
-    sat.style.display = "none"    
-    
+    sat.style.display = "none"
+
 },500)
 
 })
@@ -512,8 +514,8 @@ setTimeout(function(){
     thu.style.display = "none"
 
     fri.style.display = "none"
-    sat.style.display = "none"    
-    
+    sat.style.display = "none"
+
 },500)
 
 })
@@ -542,8 +544,8 @@ setTimeout(function(){
     sun.style.display = "none"
 
     fri.style.display = "none"
-    sat.style.display = "none"    
-    
+    sat.style.display = "none"
+
 },500)
 
 })
@@ -572,8 +574,8 @@ setTimeout(function(){
     thu.style.display = "none"
 
     sun.style.display = "none"
-    sat.style.display = "none"    
-    
+    sat.style.display = "none"
+
 },500)
 
 })
@@ -598,8 +600,8 @@ setTimeout(function(){
     thu.style.display = "none"
 
     fri.style.display = "none"
-    sun.style.display = "none"    
-    
+    sun.style.display = "none"
+
 },500)
 
 })
@@ -623,20 +625,20 @@ setTimeout(function(){
     thu.style.display = "none"
 
     fri.style.display = "none"
-    sat.style.display = "none"    
-    
+    sat.style.display = "none"
+
 },400)
 
 })
 
 
 
-})    
-    
-    
+})
+
+
 </script>
-    
-    
+
+
     </body>
-    
-</html> 
+
+</html>
